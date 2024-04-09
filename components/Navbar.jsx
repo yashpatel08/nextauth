@@ -8,10 +8,10 @@ const Navbar = () => {
     const { data: session } = useSession();
 
     return (
-        <nav className='bg-black fixed p-5'>
+        <nav className='bg-black fixed p-3 w-full'>
             <div className='container mx-auto'>
-                <ul className="flex justify-between h-screen flex-col">
-                    <div className="one">
+                <ul className="flex justify-between">
+                    <div className="left flex">
                         <li className="mx-4 mt-5">
                             <Link href='/' className='text-white font-bold'>
                                 Home
@@ -23,7 +23,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </div>
-                    <div className="auth">
+                    <div className="right flex">
                         {!session ? (
                             <>
                                 <li className="mx-4 mt-5">
@@ -31,7 +31,7 @@ const Navbar = () => {
                                         Login
                                     </Link>
                                 </li>
-                                <li className="mx-4 mb-[2rem]">
+                                <li className="mx-4 mt-5">
                                     <Link href='/register' className='text-white font-bold'>
                                         Register
                                     </Link>
