@@ -12,12 +12,12 @@ const Navbar = () => {
             <div className='container mx-auto'>
                 <ul className="flex justify-between">
                     <div className="left flex">
-                        <li className="mx-4 mt-5">
+                        <li className="mx-3 mt-3">
                             <Link href='/' className='text-white font-bold'>
                                 Home
                             </Link>
                         </li>
-                        <li className="mx-4 mt-5">
+                        <li className="mx-3 mt-3">
                             <Link href='/dashboard' className='text-white font-bold'>
                                 Dashboard
                             </Link>
@@ -26,12 +26,12 @@ const Navbar = () => {
                     <div className="right flex">
                         {!session ? (
                             <>
-                                <li className="mx-4 mt-5">
+                                <li className="mx-3 mt-3">
                                     <Link href='/login' className='text-white font-bold'>
                                         Login
                                     </Link>
                                 </li>
-                                <li className="mx-4 mt-5">
+                                <li className="mx-3 mt-3">
                                     <Link href='/register' className='text-white font-bold'>
                                         Register
                                     </Link>
